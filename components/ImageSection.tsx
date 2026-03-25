@@ -14,6 +14,12 @@ interface ImageSectionProps {
   index: number;
 }
 
+// Slower, gentler animations for mobile
+const mobileTransition = {
+  duration: 1.2,
+  ease: [0.25, 0.1, 0.25, 1] as const,
+};
+
 function ImageButton({
   image,
   onClick,
@@ -78,10 +84,10 @@ export function ImageSection({
         <section ref={ref} className="relative bg-stone-50 py-16 sm:py-20 md:hidden">
           <div className="mx-auto max-w-7xl px-5 sm:px-6">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={mobileTransition}
               className="mb-8"
             >
               <p className="text-xs uppercase tracking-[0.2em] text-stone-400 sm:text-sm">
@@ -96,10 +102,10 @@ export function ImageSection({
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ ...mobileTransition, delay: 0.15 }}
             >
               <ImageButton
                 image={images[0]}
@@ -171,10 +177,10 @@ export function ImageSection({
       <section ref={ref} className="relative bg-white py-16 sm:py-20 md:py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-6">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={mobileTransition}
             className="mb-8 text-center sm:mb-10 md:mb-12"
           >
             <p className="text-xs uppercase tracking-[0.2em] text-stone-400 sm:text-sm">
@@ -192,10 +198,10 @@ export function ImageSection({
             {images.map((image, idx) => (
               <motion.div
                 key={idx}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ ...mobileTransition, delay: idx * 0.15 }}
               >
                 <ImageButton
                   image={image}
@@ -233,10 +239,10 @@ export function ImageSection({
         >
           {/* Images */}
           <motion.div
-            initial={{ opacity: 0, x: isLeft ? -50 : 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={mobileTransition}
             className={`relative order-2 lg:order-none ${isLeft ? "" : "lg:col-start-2"}`}
           >
             {images.length <= 2 ? (
@@ -273,10 +279,10 @@ export function ImageSection({
           {/* Text */}
           <div className={`order-1 h-full lg:order-none ${isLeft ? "" : "lg:col-start-1 lg:row-start-1"}`}>
             <motion.div
-              initial={{ opacity: 0, x: isLeft ? 50 : -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={mobileTransition}
               className="h-full"
             >
               <div className="lg:sticky lg:top-32">

@@ -3,6 +3,11 @@
 import { motion } from "framer-motion";
 import { listing } from "@/config/listing";
 
+const slowTransition = {
+  duration: 1.2,
+  ease: [0.25, 0.1, 0.25, 1] as const,
+};
+
 export function Features() {
   const leftFeatures = listing.features.slice(0, Math.ceil(listing.features.length / 2));
   const rightFeatures = listing.features.slice(Math.ceil(listing.features.length / 2));
@@ -13,14 +18,14 @@ export function Features() {
         <div className="grid gap-10 sm:gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Left - Image */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={slowTransition}
             className="relative"
           >
             <img
-              src="https://res.cloudinary.com/dioazaxrs/image/upload/v1774428236/1017_ws5ptz.jpg"
+              src="https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428236/1017_ws5ptz.jpg"
               alt="Laundry"
               className="w-full"
             />
@@ -28,10 +33,10 @@ export function Features() {
 
           {/* Right - Features */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ ...slowTransition, delay: 0.1 }}
             className="flex flex-col justify-center"
           >
             <p className="text-xs uppercase tracking-[0.2em] text-stone-400 sm:text-sm">
@@ -46,10 +51,10 @@ export function Features() {
                 {leftFeatures.map((feature, idx) => (
                   <motion.li
                     key={idx}
-                    initial={{ opacity: 0, x: -10 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: 0.2 + idx * 0.05 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.8 }}
+                    transition={{ ...slowTransition, delay: 0.2 + idx * 0.08 }}
                     className="flex items-start gap-2.5 text-sm text-stone-600 sm:gap-3 sm:text-base"
                   >
                     <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-stone-300 sm:mt-2" />
@@ -61,10 +66,10 @@ export function Features() {
                 {rightFeatures.map((feature, idx) => (
                   <motion.li
                     key={idx}
-                    initial={{ opacity: 0, x: -10 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: 0.2 + (leftFeatures.length + idx) * 0.05 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.8 }}
+                    transition={{ ...slowTransition, delay: 0.2 + (leftFeatures.length + idx) * 0.08 }}
                     className="flex items-start gap-2.5 text-sm text-stone-600 sm:gap-3 sm:text-base"
                   >
                     <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-stone-300 sm:mt-2" />

@@ -3,6 +3,11 @@
 import { motion } from "framer-motion";
 import { listing } from "@/config/listing";
 
+const slowTransition = {
+  duration: 1.2,
+  ease: [0.25, 0.1, 0.25, 1] as const,
+};
+
 export function Introduction() {
   return (
     <section className="relative overflow-hidden bg-white py-16 sm:py-20 md:py-28 lg:py-32">
@@ -15,10 +20,10 @@ export function Introduction() {
         <div className="grid gap-10 sm:gap-12 lg:grid-cols-2 lg:gap-24">
           {/* Left column - Text */}
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={slowTransition}
           >
             <p className="text-xs uppercase tracking-[0.2em] text-stone-400 sm:text-sm">
               The Residence
@@ -42,10 +47,10 @@ export function Introduction() {
 
           {/* Right column - Stats */}
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ ...slowTransition, delay: 0.2 }}
             className="flex flex-col justify-center"
           >
             <div className="grid grid-cols-2 gap-6 sm:gap-8">
@@ -59,10 +64,10 @@ export function Introduction() {
               ].map((stat, i) => (
                 <motion.div
                   key={stat.label}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 15 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ ...slowTransition, delay: 0.3 + i * 0.1 }}
                   className="border-l-2 border-stone-200 pl-4 sm:pl-6"
                 >
                   <span className="font-[family-name:var(--font-display)] text-3xl font-light text-stone-900 sm:text-4xl">

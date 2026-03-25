@@ -3,6 +3,11 @@
 import { motion } from "framer-motion";
 import { listing } from "@/config/listing";
 
+const slowTransition = {
+  duration: 1.2,
+  ease: [0.25, 0.1, 0.25, 1] as const,
+};
+
 export function Contact() {
   return (
     <section id="contact" className="relative bg-white py-16 sm:py-20 md:py-28 lg:py-32">
@@ -10,10 +15,10 @@ export function Contact() {
         <div className="grid gap-12 sm:gap-16 lg:grid-cols-2">
           {/* Left - CTA */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={slowTransition}
             className="order-2 lg:order-1"
           >
             <p className="text-xs uppercase tracking-[0.2em] text-stone-400 sm:text-sm">
@@ -30,10 +35,10 @@ export function Contact() {
             <div className="mt-8 space-y-5 sm:mt-10 sm:space-y-6">
               <motion.a
                 href={`tel:${listing.contact.phone.replace(/\s/g, "")}`}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ ...slowTransition, delay: 0.2 }}
                 className="group flex items-center gap-3 sm:gap-4"
               >
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-stone-100 transition-colors group-hover:bg-stone-200 sm:h-12 sm:w-12">
@@ -61,10 +66,10 @@ export function Contact() {
 
               <motion.a
                 href={`mailto:${listing.contact.email}`}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.3 }}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ ...slowTransition, delay: 0.3 }}
                 className="group flex items-center gap-3 sm:gap-4"
               >
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-stone-100 transition-colors group-hover:bg-stone-200 sm:h-12 sm:w-12">
@@ -94,8 +99,8 @@ export function Contact() {
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ ...slowTransition, delay: 0.4 }}
               className="mt-6 text-sm text-stone-400 sm:mt-8"
             >
               {listing.contact.name}
@@ -104,15 +109,15 @@ export function Contact() {
 
           {/* Right - Image */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ ...slowTransition, delay: 0.15 }}
             className="relative order-1 lg:order-2"
           >
             <div className="overflow-hidden">
               <img
-                src="https://res.cloudinary.com/dioazaxrs/image/upload/v1774428236/1019_e8ycd5.jpg"
+                src="https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428236/1019_e8ycd5.jpg"
                 alt="Entry to 18 Whitburn Avenue"
                 className="w-full"
               />
