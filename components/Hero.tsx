@@ -19,11 +19,17 @@ export function Hero() {
     <section ref={ref} className="relative h-[100svh] w-full overflow-hidden">
       {/* Parallax background */}
       <motion.div className="absolute inset-0" style={{ y, scale }}>
-        <img
-          src={listing.heroImage.src}
-          alt={listing.heroImage.alt}
-          className="h-full w-full object-cover"
-        />
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcSet="https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774437796/hero_mobile_sqlt7y.png"
+          />
+          <img
+            src={listing.heroImage.src}
+            alt={listing.heroImage.alt}
+            className="h-full w-full object-cover"
+          />
+        </picture>
       </motion.div>
 
       {/* Gradient overlays */}
