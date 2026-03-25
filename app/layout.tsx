@@ -59,13 +59,13 @@ export const metadata: Metadata = {
       "Refined 4-bedroom residence in sought-after Milns Park. 209m² of considered living on a 607m² corner site with indoor-outdoor flow, dual living, and covered alfresco entertaining.",
     images: [
       {
-        url: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428232/1001_lvdyrn.jpg",
+        url: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428232/1001_lvdyrn.jpg",
         width: 1200,
         height: 630,
         alt: "18 Whitburn Avenue, Halswell - Rear exterior with outdoor entertaining area",
       },
       {
-        url: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428234/1007_1_qipzqq.jpg",
+        url: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428234/1007_1_qipzqq.jpg",
         width: 1200,
         height: 630,
         alt: "18 Whitburn Avenue - Indoor outdoor flow with timber ceiling",
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     title: "18 Whitburn Avenue, Halswell | 4 Bed Home For Sale",
     description:
       "Stunning architectural residence in Milns Park. 4 beds, 2 baths, 209m² on corner site. Private sale.",
-    images: ["https://res.cloudinary.com/dioazaxrs/image/upload/v1774428232/1001_lvdyrn.jpg"],
+    images: ["https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428232/1001_lvdyrn.jpg"],
   },
   icons: {
     icon: [

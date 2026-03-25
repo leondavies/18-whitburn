@@ -35,7 +35,7 @@ export const listing = {
   },
 
   heroImage: {
-    src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428232/1001_lvdyrn.jpg",
+    src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428232/1001_lvdyrn.jpg",
     alt: "18 Whitburn Avenue - Rear exterior with outdoor entertaining",
   },
 
@@ -49,7 +49,7 @@ export const listing = {
       layout: "full" as const,
       images: [
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428234/1007_1_qipzqq.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428234/1007_1_qipzqq.jpg",
           alt: "Covered alfresco area with timber ceiling",
         },
       ],
@@ -63,11 +63,11 @@ export const listing = {
       layout: "left" as const,
       images: [
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428235/1008_ozcbvz.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428235/1008_ozcbvz.jpg",
           alt: "Main lounge with outdoor flow",
         },
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428234/1009_jnhaur.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428234/1009_jnhaur.jpg",
           alt: "Main lounge and kitchen",
         },
       ],
@@ -81,11 +81,11 @@ export const listing = {
       layout: "right" as const,
       images: [
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428232/1002_zdrx7f.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428232/1002_zdrx7f.jpg",
           alt: "Second lounge with wood burner",
         },
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428232/1003_tbgc9i.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428232/1003_tbgc9i.jpg",
           alt: "Second lounge opening to deck",
         },
       ],
@@ -99,19 +99,19 @@ export const listing = {
       layout: "grid" as const,
       images: [
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428232/1004_kmovyt.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428232/1004_kmovyt.jpg",
           alt: "Kitchen and living area",
         },
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428232/1005_nywoxv.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428232/1005_nywoxv.jpg",
           alt: "Kitchen with breakfast bar",
         },
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428234/1007_y89wxb.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428234/1007_y89wxb.jpg",
           alt: "Dining area with gable window",
         },
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428233/1006_qz31bi.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428233/1006_qz31bi.jpg",
           alt: "Dining and kitchen",
         },
       ],
@@ -125,15 +125,15 @@ export const listing = {
       layout: "left" as const,
       images: [
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428234/1010_fhmicm.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428234/1010_fhmicm.jpg",
           alt: "Master bedroom with ensuite access",
         },
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428234/1011_tqzil6.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428234/1011_tqzil6.jpg",
           alt: "Master bedroom",
         },
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428235/1012_hrdd5c.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428235/1012_hrdd5c.jpg",
           alt: "Master ensuite",
         },
       ],
@@ -147,19 +147,19 @@ export const listing = {
       layout: "grid" as const,
       images: [
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428235/1013_fo5xaz.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428235/1013_fo5xaz.jpg",
           alt: "Second bedroom",
         },
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428235/1014_gl3x0i.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428235/1014_gl3x0i.jpg",
           alt: "Third bedroom",
         },
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428235/1015_ldgygy.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428235/1015_ldgygy.jpg",
           alt: "Fourth bedroom",
         },
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428235/1016_n18gl8.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428235/1016_n18gl8.jpg",
           alt: "Main bathroom",
         },
       ],
@@ -173,11 +173,11 @@ export const listing = {
       layout: "right" as const,
       images: [
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428232/1020_gcy49b.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428232/1020_gcy49b.jpg",
           alt: "Street view",
         },
         {
-          src: "https://res.cloudinary.com/dioazaxrs/image/upload/v1774428236/1018_ptmkhn.jpg",
+          src: "https://res.cloudinary.com/dioazaxrs/image/upload/f_auto,q_auto,w_1920/v1774428236/1018_ptmkhn.jpg",
           alt: "Hot tub area",
         },
       ],
