@@ -45,7 +45,7 @@ export const listing = {
       title: "Indoor-Outdoor Flow",
       subtitle: "Alfresco Living",
       description:
-        "The heart of this home is where inside meets outside. Bifold doors open completely to the covered entertaining area, featuring a striking timber-lined cathedral ceiling that creates a seamless extension of your living space.",
+        "The heart of this home is where inside meets outside. Sliding doors open completely to the covered entertaining area, featuring a striking timber-lined cathedral ceiling that creates a seamless extension of your living space.",
       layout: "full" as const,
       images: [
         {

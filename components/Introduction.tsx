@@ -60,6 +60,7 @@ export function Introduction() {
                 { value: listing.stats.livingAreas, label: "Living Areas" },
                 { value: listing.stats.garages, label: "Car Garage" },
                 { value: `${listing.stats.floorArea}m²`, label: "Floor Area" },
+                { value: "21.5m²", label: "Covered Outdoor" },
                 { value: `${listing.stats.landArea}m²`, label: "Land Area" },
               ].map((stat, i) => (
                 <motion.div
